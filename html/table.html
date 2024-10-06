@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Список высоких вершин</title>
+</head>
+<body>
+    <a href="../index.html">На главную...
+    </a>
+    <h1 align="center">Список самых высоких вершин</h1>
+    <hr>
+    <details>
+        <summary>График</summary>
+        <form action="#">
+        <table cellspacing="20">
+            <tr>
+                <td><b>Значение по оси ОХ</b></td>
+                <td><b>Результат</b></td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="radio" name="hight" id="hight"> 
+                    <label for="hight">Название</label>
+                </td>
+                <td>
+                    <input type="checkbox" name="hight" id="hight"> 
+                    <label for="hight">Максимальная высота</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="radio" name="hight" id="hight"> 
+                    <label for="hight">Расположение</label>
+                </td>
+                <td>
+                    <input type="checkbox" name="hight" id="hight"> 
+                    <label for="hight">Минимальная высота</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="radio" name="hight" id="hight"> 
+                    <label for="hight">Первое восхождение</label>
+                </td>
+                <td>
+                    <input type="checkbox" name="hight" id="hight"> 
+                    <label for="hight">Родительская гора</label>
+                </td>
+            </tr>
+        </table>
+        <button>Построить</button>
+    </form>
+    <p>Здесь будет график</p>
+    <br>
+    </details>
+
+    <details>
+        <summary>Фильтр</summary>
+        <form action="#">
+            
+            <label for="name">Название</label>
+            <input type="text" name="name" id="name">
+            <br>
+            <label for="height_min">Высота: от:</label>
+            <input type="text" name="height_min" id="height_min"> <label for="height_max">до: </label> <input type="text" name="height_max" id="height_max"> 
+            <br>
+            <label for="location">Расположение</label>
+            <input type="text" name="location" id="location">
+            <br>
+            <label for="first">Первое восхождение</label>
+            <input type="text" name="first" id="first">
+            <br>
+            <label for="parent">Родительская гора</label>
+            <input type="text" name="parent" id="parent">
+            <br>
+            <button>Найти</button>
+        </form>
+        <p>Здесь будет таблица с результатом</p>
+    </details>
+
+    <details>
+        <summary>Сортировка</summary>
+        <form action="#">
+            <p>Сортировать по:
+                <select name="sort">
+                    <option value="0">Название</option>
+                    <option value="1">Высота</option>
+                    <option value="2">Расположение</option>
+                    <option value="3">Первое восхождение</option>
+                   </select>
+                   <label for="direction">По убыванию?</label>
+                <input type="checkbox" name="direction" id="direction">              
+            </p>
+            <button>Сортировать</button>
+        </form>
+        <br>
+        Здесь будет результат сортировки
+        
+    </details>
+    <br>
+    <table border="1" cellspacing="0" cellpadding="7">
+        <tr align="center">
+            <td><b>Название</b></td>
+            <td><b>Высота(м)</b></td>
+            <td><b>Расположение</b></td>
+            <td><b>Первое восхождение</b></td>
+            <td><b>Родительская гора</b></td>
+        </tr>
+        <tr>
+            <td>Джомолунгма (Эверест)</td>
+            <td>8848,86</td>
+            <td>Махалангур-Химал, Гималаи</td>
+            <td>1953</td>
+            <td>отсутствует</td>
+        </tr>
+        <tr>
+            <td>Чогори (К2)</td>
+            <td>8611 </td>
+            <td>Балторо-Музтаг, Каракорум</td>
+            <td>1954</td>
+            <td>отсутствует</td>
+        </tr>
+        <tr>
+            <td>Канченджанга</td>
+            <td>8586</td>
+            <td>Канченджанга, Гималаи</td>
+            <td>1955</td>
+            <td>отсутствует</td>
+        </tr>
+        <tr>
+            <td>Лхоцзе</td>
+            <td>8516</td>
+            <td>Махалангур-Химал, Гималаи </td>
+            <td>1956</td>
+            <td>Джомолунгма</td>
+        </tr>
+        <tr>
+            <td>Макалу</td>
+            <td>8485</td>
+            <td>Махалангур-Химал, Гималаи</td>
+            <td>1955</td>
+            <td>Лхоцзе</td>
+        </tr>
+        <tr>
+            <td>Чо-Ойю</td>
+            <td>8188</td>
+            <td>Махалангур-Химал, Гималаи</td>
+            <td>1954</td>
+            <td>Джомолунгма</td>
+        </tr>
+        <tr>
+            <td>Дхаулагири</td>
+            <td>8167</td>
+            <td>Дхаулагири, Гималаи</td>
+            <td>1960</td>
+            <td>отсутствует</td>
+        </tr>
+        <tr>
+            <td>Манаслу</td>
+            <td>8163</td>
+            <td>Манаслу, Гималаи</td>
+            <td>1956</td>
+            <td>отсутствует</td>
+        </tr>
+        <tr>
+            <td>Нангапарбат</td>
+            <td>8126</td>
+            <td>Нангапарбат, Гималаи</td>
+            <td>1953</td>
+            <td>отсутствует</td>
+        </tr>
+        <tr>
+            <td>Аннапурна I</td>
+            <td>8091</td>
+            <td>Аннапурна, Гималаи </td>
+            <td>1950</td>
+            <td>отсутствует</td>
+        </tr>
+        <tr>
+            <td>Гашербрум I</td>
+            <td>8080</td>
+            <td>Балторо Музтаг, Каракорум</td>
+            <td>1958</td>
+            <td>отсутствует</td>
+        </tr>
+        <tr>
+            <td>Броуд-Пик</td>
+            <td>8051</td>
+            <td>Балторо Музтаг, Каракорум </td>
+            <td>1957</td>
+            <td>Гашербрум I</td>
+        </tr>
+        <tr>
+            <td>Гашербрум II</td>
+            <td>8034</td>
+            <td>Балторо Музтаг, Каракорум</td>
+            <td>1956</td>
+            <td>Гашербрум I</td>
+        </tr>
+    </table>
+</body>
+</html>
