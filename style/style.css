@@ -1,0 +1,140 @@
+body {
+    text-align: center;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+.header {
+    background-image: url('../img/everest.jpg');
+    padding: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+
+.logo {
+    font-size: 2vw;
+    color: black;
+    display: inline-block;
+}
+
+
+.menu {
+    margin-top: 2vw;
+}
+
+.menu a {
+    margin: 0 1vw;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 1.2vw;
+}
+
+
+.everest-img {
+    background-image: url('../img/e2.jpg');
+    width: 90%;
+    height: 30vw;
+    margin: 1vw auto;
+    background-size: cover;
+}
+
+
+.everest-info {
+    margin: 1vw auto;
+    width: 90%;
+    font-size: 1.5vw;
+}
+
+
+.main-title {
+    font-size: 2vw;
+    font-weight: bold;
+    margin-top: 1vw;
+}
+
+
+.content-wrapper {
+    text-align: center;
+    margin-top: 2vw;
+}
+
+
+.content {
+    display: inline-block;
+    width: 23%;
+    margin: 1%;
+    background-color: #e0f7fa;
+    border: 1px solid #ccc;
+    text-align: left;
+    padding: 1vw;
+    box-sizing: border-box;
+    vertical-align: top;
+}
+
+.content-header {
+    margin-bottom: 1vw;
+    overflow: hidden;
+}
+
+.img {
+    float: left;
+    width: 40%;
+    height: 7vw;
+    background-size: cover;
+    background-color: #e0f7fa;
+    margin-right: 1vw;
+}
+
+.img-chogory {
+    background-image: url('../img/ChoOyu.jpg');
+}
+
+.img-kha {
+    background-image: url('../img/Kangchenjunga.JPG');
+}
+
+.img-lxo {
+    background-image: url('../img/LhotseMountain.jos.500pix.jpg');
+}
+
+.img-makal {
+    background-image: url('../img/Makalu.jpg');
+}
+
+.img-cho {
+    background-image: url('../img/ChoOyu.jpg');
+}
+
+.img-dxa {
+    background-image: url('../img/Dhaulagiri.jpg');
+}
+.search-form {
+    background-color: gray;
+
+    font-size: 1.2vw;
+    box-sizing: border-box;
+}
+
+.title {
+    display: inline-block;
+    width: 55%;
+    font-size: 1.5vw;
+    font-weight: bold;
+    color: #333;
+    vertical-align: top;
+    text-align: left;
+    padding-top: 2.5vw;
+}
+
+.description {
+    font-size: 1.2vw;
+    color: #555;
+    line-height: 1.4;
+    margin-top: 1vw;
+    border-top: 1px solid #ccc;
+    padding-top: 1vw;
+}
