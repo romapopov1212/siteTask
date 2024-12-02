@@ -96,7 +96,7 @@ body {
 .logo-block {
     text-align: center;
     flex: 1;
-    max-width: 23%;
+    
     min-width: 200px;
     padding: 15px;
     box-sizing: border-box;
@@ -163,8 +163,8 @@ h2 {
 
 .small-image {
     background-image: url("../img/chogory.jpg");
-    width: 80px;
-    height: 80px;
+    width: 160px;
+    height: 160px;
     background-size: cover;
     background-position: center;
 }
@@ -232,8 +232,12 @@ h2 {
     .logos {
         flex-direction: column;
         align-items: center;
+       
     }
 
+    .logo-block{
+        width: 100%;
+    }
     .small-image {
         width: 200px;
     }
