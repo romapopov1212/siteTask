@@ -29,7 +29,7 @@ img.wh{
     background: #ccc;
     color: black;
 }
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .header-grid {
         grid-template-columns: 1fr;
     }
@@ -43,4 +43,4 @@ img.wh{
     .logo-title {
         margin-bottom: -17px;
     }
-}
+} */

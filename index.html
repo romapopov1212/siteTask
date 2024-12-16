@@ -20,7 +20,8 @@
 </head>
 <body>
 
-    <div class="py-2 px-3 bg-light header">
+    
+    <!-- <div class="py-2 px-3 bg-light header">
         <div class="header-grid">
             <div class="fw-bold fs-4 header-cell logo-title">Самые высокие горы</div>
             <div class="header-cell"></div>
@@ -31,19 +32,52 @@
                 <a href="html/table.html" class="menu-item text-decoration-none px-2 py-1 rounded bg-secondary text-dark inactive">Список самых высоких вершин</a>
             </div>
         </div>
+    </div> -->
+
+
+    <div class="py-2 px-3 bg-light">
+        <nav class="navbar navbar-expand-md navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand fw-bold fs-4" href="index.html">Самые высокие горы</a>
+                <button class="navbar-toggler bg-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active text-warning" href="index.html">Самые высокие горы</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="html/list.html">Топ-7 самых высоких вершин</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="html/table.html">Список самых высоких вершин</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </div>
     
-
-    <!-- <header class="py-2 px-3 bg-light">
-        <div class="d-flex flex-column flex-lg-row justify-content-between align-items-center">
-            <h1 class="fw-bold fs-4">Самые высокие горы</h1>
-            <div class="d-flex flex-column flex-lg-row gap-3 menu">
-                <a href="index.html" class="active text-decoration-none px-3 py-2 bg-dark text-warning rounded">Самые высокие горы</a>
-                <a href="html/list.html" class="text-decoration-none px-3 py-2 rounded bg-light text-dark">Топ-7 самых высоких вершин</a>
-                <a href="html/table.html" class="text-decoration-none px-3 py-2 rounded bg-light text-dark">Список самых высоких вершин</a>
-            </div>
+    <!-- <nav class="navbar navbar-expand-md bg-light navbar-light" >
+        <a class="navbar-brand ms-3" href="#">Топ аниме</a>
+        <button class="navbar-toggler bg-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav me-auto ">
+                <li class="nav-item">
+                    <a class="nav-link text-danger " href="#">Лучшее</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="#">Топ аниме</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Таблица</a>
+                </li>
+            </ul>
         </div>
-    </header> -->
+    </nav> -->
 
 
     <main class="container my-4 main-content">
@@ -69,25 +103,27 @@
             <div class="col-lg-3 col-md-6">
                 <div class="p-3">
                     <img src="./img/everest.jpg" class="rounded-circle mx-auto mb-3 wh" alt="Эверест">
-                    <p>Эверест является частью цепи Гималайских гор...</p>
+                    <p> Эверест является частью цепи Гималайских гор. Его южная вершина проходит вдоль границы КНР и Непала, а северная часть примыкает к территории Китайской Народной Республики.
+                        «Джомолунгма» — это тибетское слово, означающее «Божественная мать жизненной энергии».</p>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6">
                 <div class="p-3">
                     <img src="./img/e2.jpg" class="rounded-circle mx-auto mb-3 wh" alt="Гора 2">
-                    <p>Гору назвали в честь богини Шераб Чжаммы...</p>
+                    <p>Гору назвали в честь богини Шераб Чжаммы, которая олицетворяла собой материнскую энергию.
+                        Своей формой гора Эверест напоминает трёхгранную пирамиду с более крутым южным склоном.</p>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6">
                 <div class="p-3">
                     <img src="./img/HiddenPeak.jpg" class="rounded-circle mx-auto mb-3 wh" alt="Чогори">
-                    <p>Чогори известна как «Дикая гора»...</p>
+                    <p>Чогори известна как «Дикая гора» (Savage Mountain) из-за чрезвычайной сложности восхождения. Достигнуть пика Чогори с китайской стороны труднее и опаснее, поэтому на него обычно поднимаются с пакистанской стороны. Чогори стала последним восьмитысячником, покорённым в зимний период.</p>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6">
                 <div class="p-3">
                     <img src="./img/on_list.jpg" class="rounded-circle mx-auto mb-3 wh" alt="Гора 4">
-                    <p>Достигнуть пика Чогори с китайской стороны труднее...</p>
+                    <p>Достигнуть пика Чогори с китайской стороны труднее и опаснее, поэтому на него обычно поднимаются с пакистанской стороны. Чогори стала последним восьмитысячником, покорённым в зимний период</p>
                 </div>
             </div>
         </div>
@@ -96,13 +132,14 @@
     <section class="container my-4">
         <div class="text-center mb-4">
             <h2>Эверест</h2>
-            <p>Гору назвали в честь богини Шераб Чжаммы...</p>
+            <p>Гору назвали в честь богини Шераб Чжаммы, которая олицетворяла собой материнскую энергию.
+                Своей формой гора Эверест напоминает трёхгранную пирамиду с более крутым южным склоном.</p>
         </div>
         <div class="d-flex align-items-center gap-3">
             <img src="./img/chogory.jpg" class="rounded" style="width: 160px; height: 160px;" alt="Чогори">
             <div>
                 <h2>Чогори</h2>
-                <p>Чогори известна как «Дикая гора»...</p>
+                <p>Чогори известна как «Дикая гора» (Savage Mountain) из-за чрезвычайной сложности восхождения. Достигнуть пика Чогори с китайской стороны труднее и опаснее.</p>
             </div>
         </div>
     </section>
