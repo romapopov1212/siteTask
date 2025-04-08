@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Список высоких вершин</title>
+    <script src="../js/data.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/table.js"></script>
+    <script src="../js/filter.js"></script>
+    <script src="../js/sort.js"></script>
 </head>
 <body>
     <div>
@@ -18,7 +23,7 @@
         </div>
     
     <hr>
-    <details>
+    <!-- <details>
         <summary>График</summary>
         <form action="#">
         <table cellspacing="20">
@@ -61,12 +66,10 @@
     </form>
     <p>Здесь будет график</p>
     <br>
-    </details>
+    </details> -->
 
-    <details>
-        <summary>Фильтр</summary>
-        <form action="#">
-            
+ 
+        <!-- <form id = "filter">
             <label for="name">Название</label>
             <input type="text" name="name" id="name">
             <br>
@@ -85,434 +88,66 @@
             <label for="count">Количество восхождений</label>
             <input type="text" name="count" id="count">
             <br>
-            <button>Найти</button>
-        </form>
-        <p>Здесь будет таблица с результатом</p>
-    </details>
-
-
-    <details>
-        <summary>Сортировка</summary>
-        <form action="#">
-            <p>Сортировать по:
-                <select name="sort">
-                    <option value="0">Название</option>
-                    <option value="1">Высота</option>
-                    <option value="2">Страна</option>
-                    <option value="3">Хребет</option>
-                    <option value="4">Первое восхождение</option>
-                    <option value="5">Количество восхождений</option>
-                </select>
-                <label for="direction">По убыванию?</label>
-                <input type="checkbox" name="direction" id="direction">              
+            <input type="button" value="Найти">
+            <input type="button" value="Очистить фильтры">
+        </form> -->
+        <form id="filter">
+            <p>
+              <label for="name">Название</label>
+              <input type="text" id="name">
             </p>
-            <button>Сортировать</button>
+            <p>
+              <label for="location">Страна</label>
+              <input type="text" id="location">
+            </p>
+            <p>
+              <label for="firstGo">Первое восхождение</label>
+              <input type="text" id="firstGo">
+            </p>
+            <p>
+              <label for="chrebet">Хребет</label>
+              <input type="text" id="chrebet">
+            </p>
+            <p>
+              <label for="height">Высота</label>
+              от <input type="number" id="height_min">
+              до <input type="number" id="height_max">
+            </p>
+            <p>
+              <label for="count">Количество восхождений</label>
+            <input type="number" id="count"> 
+              
+            </p>
+            <p>
+              <input type="button" value="Найти">
+              <input type="button" value="Очистить фильтры">
+            </p>
         </form>
-        <br>
-        Здесь будет результат сортировки
-    </details>
-    <br>
-    <table border="1" cellspacing="0" cellpadding="7">
-        <tr align="center">
-            <td><b>Название</b></td>
-            <td><b>Высота (м)</b></td>
-            <td><b>Страна</b></td>
-            <td><b>Хребет</b></td>
-            <td><b>Первое восхождение</b></td>
-            <td><b>Количество восхождений</b></td>
-        </tr>
-        <tr>
-            <td>Джомолунгма (Эверест)</td>
-            <td>8848.86</td>
-            <td>Непал</td>
-            <td>Махалангур-Химал</td>
-            <td>1953</td>
-            <td>146</td>
-        </tr>
-        <tr>
-            <td>К2</td>
-            <td>8611</td>
-            <td>Пакистан</td>
-            <td>Каракорум</td>
-            <td>1954</td>
-            <td>89</td>
-        </tr>
-        <tr>
-            <td>Канченджанга</td>
-            <td>8586</td>
-            <td>Непал</td>
-            <td>Гималаи</td>
-            <td>1955</td>
-            <td>78</td>
-        </tr>
-        <tr>
-            <td>Лхоцзе</td>
-            <td>8516</td>
-            <td>Непал</td>
-            <td>Гималаи</td>
-            <td>1956</td>
-            <td>93</td>
-        </tr>
-        <tr>
-            <td>Макалу</td>
-            <td>8485</td>
-            <td>Непал</td>
-            <td>Гималаи</td>
-            <td>1955</td>
-            <td>66</td>
-        </tr>
-        <tr>
-            <td>Чо-Ойю</td>
-            <td>8188</td>
-            <td>Непал</td>
-            <td>Гималаи</td>
-            <td>1954</td>
-            <td>112</td>
-        </tr>
-        <tr>
-            <td>Дхаулагири</td>
-            <td>8167</td>
-            <td>Непал</td>
-            <td>Гималаи</td>
-            <td>1960</td>
-            <td>45</td>
-        </tr>
-        <tr>
-            <td>Манаслу</td>
-            <td>8163</td>
-            <td>Непал</td>
-            <td>Гималаи</td>
-            <td>1956</td>
-            <td>88</td>
-        </tr>
-        <tr>
-            <td>Нангапарбат</td>
-            <td>8126</td>
-            <td>Пакистан</td>
-            <td>Гималаи</td>
-            <td>1953</td>
-            <td>50</td>
-        </tr>
-        <tr>
-            <td>Аннапурна I</td>
-            <td>8091</td>
-            <td>Непал</td>
-            <td>Гималаи</td>
-            <td>1950</td>
-            <td>60</td>
-        </tr>
-        <tr>
-            <td>Газурия</td>
-            <td>7845</td>
-            <td>Китай</td>
-            <td>Гималаи</td>
-            <td>1965</td>
-            <td>55</td>
-        </tr>
-        <tr>
-            <td>Шишапангма</td>
-            <td>8027</td>
-            <td>Китай</td>
-            <td>Гималаи</td>
-            <td>1964</td>
-            <td>34</td>
-        </tr>
-        <tr>
-            <td>Броуд-Пик</td>
-            <td>8051</td>
-            <td>Пакистан</td>
-            <td>Каракорум</td>
-            <td>1957</td>
-            <td>52</td>
-        </tr>
-        <tr>
-            <td>Гашербрум I</td>
-            <td>8080</td>
-            <td>Пакистан</td>
-            <td>Каракорум</td>
-            <td>1958</td>
-            <td>39</td>
-        </tr>
-        <tr>
-            <td>Гашербрум II</td>
-            <td>8035</td>
-            <td>Пакистан</td>
-            <td>Каракорум</td>
-            <td>1956</td>
-            <td>42</td>
-        </tr>
-        <tr>
-            <td>Hidden Peak</td>
-            <td>8000</td>
-            <td>Пакистан</td>
-            <td>Каракорум</td>
-            <td>1961</td>
-            <td>27</td>
-        </tr>
-        <tr>
-            <td>Музтаг Ата</td>
-            <td>7546</td>
-            <td>Китай</td>
-            <td>Памир</td>
-            <td>1956</td>
-            <td>18</td>
-        </tr>
-        <tr>
-            <td>Лангтанг Лирунг</td>
-            <td>7227</td>
-            <td>Непал</td>
-            <td>Гималаи</td>
-            <td>1971</td>
-            <td>33</td>
-        </tr>
-        <tr>
-            <td>Пумори</td>
-            <td>7161</td>
-            <td>Непал</td>
-            <td>Гималаи</td>
-            <td>1962</td>
-            <td>19</td>
-        </tr>
-        <tr>
-            <td>Амадальблам</td>
-            <td>6812</td>
-            <td>Непал</td>
-            <td>Гималаи</td>
 
-    <td>1961</td>
-            <td>23</td>
-        </tr>
-        <tr>
-            <td>Тризул</td>
-            <td>7120</td>
-            <td>Индия</td>
-            <td>Гималаи</td>
-            <td>1958</td>
-            <td>13</td>
-        </tr>
-        <tr>
-            <td>Сигна</td>
-            <td>6810</td>
-            <td>Индия</td>
-            <td>Гималаи</td>
-            <td>1964</td>
-            <td>14</td>
-        </tr>
-        <tr>
-            <td>Сикким</td>
-            <td>7138</td>
-            <td>Индия</td>
-            <td>Гималаи</td>
-            <td>1970</td>
-            <td>7</td>
-        </tr>
-        <tr>
-            <td>Кангченддзьонг</td>
-            <td>7462</td>
-            <td>Непал</td>
-            <td>Гималаи</td>
-            <td>1970</td>
-            <td>20</td>
-        </tr>
-        <tr>
-            <td>Чо Ойю</td>
-            <td>8201</td>
-            <td>Непал</td>
-            <td>Гималаи</td>
-            <td>1954</td>
-            <td>110</td>
-        </tr>
-        <tr>
-            <td>Шаньшань</td>
-            <td>6173</td>
-            <td>Китай</td>
-            <td>Тянь-Шань</td>
-            <td>1985</td>
-            <td>12</td>
-        </tr>
-        <tr>
-            <td>Пекинская</td>
-            <td>6584</td>
-            <td>Китай</td>
-            <td>Тянь-Шань</td>
-            <td>1991</td>
-            <td>8</td>
-        </tr>
-        <tr>
-            <td>Пик коммунизма</td>
-            <td>7495</td>
-            <td>Таджикистан</td>
-            <td>Памир</td>
-            <td>1957</td>
-            <td>17</td>
-        </tr>
-        <tr>
-            <td>Пик Ленина</td>
-            <td>7134</td>
-            <td>Таджикистан</td>
-            <td>Памир</td>
-            <td>1957</td>
-            <td>23</td>
-        </tr>
-        <tr>
-            <td>Хан-Тенгри</td>
-            <td>7010</td>
-            <td>Казахстан</td>
-            <td>Тянь-Шань</td>
-            <td>1931</td>
-            <td>29</td>
-        </tr>
-        <tr>
-            <td>Ала-Арча</td>
-            <td>4895</td>
-            <td>Кыргызстан</td>
-            <td>Тянь-Шань</td>
-            <td>1970</td>
-            <td>35</td>
-        </tr>
-        <tr>
-            <td>Сарычат</td>
-            <td>4820</td>
-            <td>Кыргызстан</td>
-            <td>Тянь-Шань</td>
-            <td>1980</td>
-            <td>25</td>
-        </tr>
-        <tr>
-            <td>Снежный барс</td>
-            <td>4390</td>
-            <td>Кыргызстан</td>
-            <td>Тянь-Шань</td>
-            <td>1985</td>
-            <td>20</td>
-        </tr>
-        <tr>
-            <td>Пик Победы</td>
-            <td>7439</td>
-            <td>Кыргызстан</td>
-            <td>Тянь-Шань</td>
-            <td>1954</td>
-            <td>15</td>
-        </tr>
-        <tr>
-            <td>Альпийская вертушка</td>
-            <td>3500</td>
-            <td>Франция</td>
-            <td>Альпы</td>
-            <td>1975</td>
-            <td>10</td>
-        </tr>
-        <tr>
-            <td>Снежный барс</td>
-            <td>4700</td>
-            <td>Италия</td>
-            <td>Альпы</td>
-            <td>1980</td>
-            <td>5</td>
-        </tr>
-        <tr>
-            <td>Пик Монблан</td>
-            <td>4807</td>
-            <td>Франция</td>
-            <td>Альпы</td>
-            <td>1786</td>
-            <td>50</td>
-        </tr>
-        <tr>
-            <td>Кавказский хребет</td>
-            <td>5642</td>
-            <td>Россия</td>
-            <td>Кавказ</td>
-            <td>1868</td>
-            <td>30</td>
-        </tr>
-        <tr>
-            <td>Лабуче-Канг</td>
-            <td>7600</td>
-            <td>Китай</td>
-            <td>Джугал-Химал </td>
-            <td>1900</td>
-            <td>15</td>
-        </tr>
-        <tr>
-            <td>Кират-Чули</td>
-            <td>4800</td>
-            <td>Китай</td>
-            <td>Кират-Чули</td>
-            <td>1868</td>
-            <td>20</td>
-        </tr>
-        <tr>
-            <td>Шаньшань</td>
-            <td>6173</td>
-            <td>Китай</td>
-            <td>Тянь-Шань</td>
-            <td>1985</td>
-            <td>12</td>
-        </tr>
-        <tr>
-            <td>Поронг-Ри</td>
-            <td>7292</td>
-            <td>Китай</td>
-            <td>Кавказ</td>
-            <td>1868</td>
-            <td>30</td>
-        </tr>
-        <tr>
-            <td>Пик коммунизма</td>
-            <td>7495</td>
-            <td>Таджикистан</td>
-            <td>Памир</td>
-            <td>1957</td>
-            <td>17</td>
-        </tr>
-        <tr>
-            <td>Кавказский хребет</td>
-            <td>5642</td>
-            <td>Россия</td>
-            <td>Кавказ</td>
-            <td>1868</td>
-            <td>30</td>
-        </tr>
-        <tr>
-            <td>Манаслу</td>
-            <td>8163</td>
-            <td>Непал</td>
-            <td>Гималаи</td>
-            <td>1956</td>
-            <td>88</td>
-        </tr>
-        <tr>
-            <td>Нангапарбат</td>
-            <td>8126</td>
-            <td>Пакистан</td>
-            <td>Гималаи</td>
-            <td>1953</td>
-            <td>50</td>
-        </tr>
-        <tr>
-            <td>Аннапурна</td>
-            <td>8091</td>
-            <td>Непал</td>
-            <td>Гималаи</td>
-            <td>1950</td>
-            <td>60</td>
-        </tr>
-        <tr>
-            <td>Газурия</td>
-            <td>7845</td>
-            <td>Китай</td>
-            <td>Гималаи</td>
-            <td>1965</td>
-            <td>55</td>
-        </tr>
-        <tr>
-            <td>Шишапангма</td>
-            <td>8027</td>
-            <td>Китай</td>
-            <td>Гималаи</td>
-            <td>1964</td>
-            <td>34</td>
-        </tr>
-    </table>
-        
+    <form id="sort">
+        <p> Сортировать по</p>
+        <p>
+          <select id="fieldsFirst">
+          </select> 
+          по убыванию? <input  type="checkbox"  id="fieldsFirstDesc">
+        </p>
+        <p> 
+          <select id="fieldsSecond">
+          </select> 
+          по убыванию? <input  type="checkbox"  id="fieldsSecondDesc">
+        </p>
+        <p> 
+          <select id="fieldsThird">
+          </select> 
+          по убыванию? <input type="checkbox" id="fieldsThirdDesc">
+        </p>
+        <input type="button" value="Сортировать"> 
+        <input type="button" value="Сбросить сортировку">
+    </form>
+    <br>
+    <table id="list">
+    </table> 
+</body>
+</html>
+
+       
